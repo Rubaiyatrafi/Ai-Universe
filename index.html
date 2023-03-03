@@ -20,6 +20,13 @@
     </header>
 
     <main class="container">
+        <section id="spinner" class="d-none">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
         <section>
             <div id="hubs-container" class="row row-cols-1 row-cols-md-3 g-5 mt-5">
 
@@ -29,7 +36,7 @@
 
     <footer>
         <div class="d-grid gap-2 col-1 mx-auto m-5">
-            <button type="button" class="btn btn-danger mx-auto">See More</button>
+            <button onclick="loadHubMore()" type="button" class="btn btn-danger mx-auto">See More</button>
         </div>
     </footer>
 
