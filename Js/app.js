@@ -11,14 +11,30 @@ const displayHubs = (hubs) => {
     const hubDiv = document.createElement("div");
     hubDiv.classList.add("col");
     hubDiv.innerHTML = `
-      <div class="card">
-                          <img src="${hub.image}" class="card-img-top" alt="...">
-                          <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural
-                                  lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                      </div>
+      <div class="card p-4">
+        <img src="${hub.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Features</h5>
+                <p class="card-text">
+                    <ol>
+                        <li>${hub.features[0]}</li>
+                        <li>${hub.features[1]}</li>
+                        <li>${hub.features[2]}</li>
+                    </ol>
+                </p>
+                <hr>                
+                <div class="d-flex justify-content-between">
+                 <div>
+                  <h5>${hub.name}</h5>                  
+                  <p>${hub.published_in}<p>
+                 </div>
+                 <div>
+                 <button type="button" class="btn btn-outline-info fst-italic fw-bolder text-secondary">Details</button>
+                 </div>
+                </div>
+                
+            </div>
+      </div>
       `;
     hubsContainer.appendChild(hubDiv);
   });
