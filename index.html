@@ -32,11 +32,28 @@
 
             </div>
         </section>
+        <section>
+            <!-- Modal -->
+            <div class="modal fade" id="DetailModal" tabindex="-1" aria-labelledby="DetailModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="DetailModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="detail-body" class="modal-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="d-grid gap-2 col-1 mx-auto m-5">
-            <button onclick="loadHubMore()" type="button" class="btn btn-danger mx-auto">See More</button>
+        <div id="seeAll" class="d-grid gap-2 col-1 mx-auto m-5">
+            <button id="see-more" type="button" class="btn btn-danger mx-auto d-none">See More</button>
         </div>
     </footer>
 
