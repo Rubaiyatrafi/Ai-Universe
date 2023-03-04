@@ -34,11 +34,12 @@ const displayHubs = (hubs) => {
                 <hr>                
                 <div class="d-flex justify-content-between">
                  <div>
-                  <h5>${hub.name}</h5>                  
-                  <p>${hub.published_in}<p>
+                  <h5>${hub.name}</h5>
+                  <br>                 
+                  <p  <i class="fa-solid fa-calendar-week"></i> ${hub.published_in}<p>
                  </div>
                  <div>
-                 <button onclick="loadDetails('${hub.id}')" href="#" type="button" class="btn btn-outline-info fst-italic fw-bolder text-secondary" data-bs-toggle="modal" data-bs-target="#DetailModal">Details</button>
+                 <button onclick="loadDetails('${hub.id}')" href="#" type="button" class="btn btn-outline-info border-0 rounded-circle bg-danger-subtle fw-bolder text-secondary mt-3" data-bs-toggle="modal" data-bs-target="#DetailModal"><i class="fa-solid fa-arrow-right text-danger-emphasis"></i></button>
                  </div>
                 </div>
                 
@@ -166,10 +167,10 @@ document.getElementById("seeAll").addEventListener("click", function () {
                       <div class="d-flex justify-content-between">
                        <div>
                         <h5>${hub.name}</h5>                  
-                        <p>${hub.published_in}<p>
-                       </div>
-                       <div>
-                       <button onclick="loadDetails('${hub.id}')" href="#" type="button" class="btn btn-outline-info fst-italic fw-bolder text-secondary" data-bs-toggle="modal" data-bs-target="#DetailModal">Details</button>
+                        <p  <i class="fa-solid fa-calendar-week"></i> ${hub.published_in}<p>
+                 </div>
+                 <div>
+                 <button onclick="loadDetails('${hub.id}')" href="#" type="button" class="btn btn-outline-info border-0 rounded-circle bg-danger-subtle fw-bolder text-secondary mt-3" data-bs-toggle="modal" data-bs-target="#DetailModal"><i class="fa-solid fa-arrow-right text-danger-emphasis"></i></button>
                        </div>
                       </div>
                       
