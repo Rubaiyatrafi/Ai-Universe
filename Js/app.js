@@ -127,6 +127,7 @@ const displayDetails = (detail) => {
   <div class="col">
     <div class="card m-3 p-3">
       <img src="${detail.image_link[0]}" class="card-img-top" alt="...">
+      <p class="bg-danger w-25 rounded text-center text-white position-absolute top-0 end-0">${detail.accuracy.score} accuracy</p>
       <div class="card-body">
         <h5 class="card-title text-center fst-italic fw-bolder m-3">${detail.input_output_examples[0].input}</h5>
         <p class="card-text text-center">${detail.input_output_examples[0].output}.</p>
