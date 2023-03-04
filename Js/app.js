@@ -70,7 +70,9 @@ const loadDetails = async (id) => {
 const displayDetails = (detail) => {
   //   console.log(detail);
   const modalTitle = document.getElementById("DetailModalLabel");
-  modalTitle.innerText = detail.tool_name;
+  modalTitle.innerHTML = `
+      <h4 class="text-danger ms-5"> ${detail.tool_name} </h4>
+  `;
   const bodyDetail = document.getElementById("detail-body");
   bodyDetail.innerHTML = `
   <div class="row row-cols-1 row-cols-md-2 g-4">  
