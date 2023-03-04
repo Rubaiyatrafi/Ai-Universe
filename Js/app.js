@@ -20,7 +20,7 @@ const displayHubs = (hubs) => {
     const hubDiv = document.createElement("div");
     hubDiv.classList.add("col");
     hubDiv.innerHTML = `
-      <div class="card p-4">
+      <div class="card p-4 shadow-lg">
         <img src="${hub.image}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Features</h5>
@@ -155,7 +155,7 @@ document.getElementById("seeAll").addEventListener("click", function () {
       const hubDiv = document.createElement("div");
       hubDiv.classList.add("col");
       hubDiv.innerHTML = `
-            <div class="card p-4">
+            <div class="card p-4 shadow-lg">
               <img src="${hub.image}" class="card-img-top" alt="...">
                   <div class="card-body">
                       <h5 class="card-title">Features</h5>
